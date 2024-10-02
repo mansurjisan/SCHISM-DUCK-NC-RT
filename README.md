@@ -56,3 +56,12 @@ SCHISM Required Files Table (Duck, NC RT 1994 Case)
 
 Note: This table includes the core files typically required for each configuration. Additional files might be necessary depending on specific model setups and options chosen in the parameter files.
 
+# Updated simulations with elev2D.th.nc file
+
+| Model Configuration | Water Elevation | Wave Height | Directory in Hercules|
+|---------------------|-----------------|-------------|-----------|
+| Exp 1: SCHISM+WWM (reference) | [Link](https://drive.google.com/file/d/18gRHxzKsO1iyLROuvtO55io29yM7rfG3/view?usp=drive_link) | [Link](https://drive.google.com/file/d/1Pq8-iZryxGsdSQgXbkdereXSsBcX3eRm/view?usp=drive_link) | `/work/noaa/nosofs/mjisan/schism/schism_verification_tests/Test_WWM_Duck_Elev2D_SCH_WWM` |
+| Exp 2: SCHISM+WWM+ATM | [Link](https://drive.google.com/file/d/1pL-jxQYC6Qh9Jtwo4UBfrUVgyl_3qSLv/view?usp=drive_link) | [Link](https://drive.google.com/file/d/1YpaiMf7jRh0PfHEUO8oFqvw3RxOTp3B8/view?usp=drive_link) | `/work/noaa/nosofs/mjisan/schism/schism_verification_tests/Test_WWM_Duck_Elev2D_SCH_WWM_ATM` |
+| Exp 3: SCHISM+ATM | [Link](https://drive.google.com/file/d/1J1JJSXS9LXiWrYP_4Tu_jQ6Z6qsyclZN/view?usp=drive_link) | - | `/work/noaa/nosofs/mjisan/schism/schism_verification_tests/Test_WWM_Duck_Elev2D_SCH_ATM` |
+| Exp 4: Standalone SCHISM | [Link](https://drive.google.com/file/d/1LtrI_gykxcsmXD7uwa8bnHpCby7_DCZW/view?usp=drive_link) | - | `/work/noaa/nosofs/mjisan/schism/schism_verification_tests/Test_WWM_Duck_Elev2D_SCH_ST` 
+
