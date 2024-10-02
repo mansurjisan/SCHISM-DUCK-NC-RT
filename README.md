@@ -33,3 +33,26 @@ Temporal Resolution: Usually hourly or sub-hourly time steps
 Spatial Coverage: Values provided for each open boundary node
 Format: NetCDF (Network Common Data Form)
 
+SCHISM Required Files Table (Duck, NC RT 1994 Case)
+
+
+| File Name | SCHISM Standalone | SCHISM + WWM | SCHISM + WWM + ATM |
+|-----------|:-----------------:|:------------:|:------------------:|
+| hgrid.gr3 | ✓ | ✓ | ✓ |
+| vgrid.in | ✓ | ✓ | ✓ |
+| param.nml | ✓ | ✓ | ✓ |
+| bctides.in | ✓ | ✓ | ✓ |
+| manning.gr3 | ✓ | ✓ | ✓ |
+| elev.ic | ✓ | ✓ | ✓ |
+| rough.gr3 | ✓ | ✓ | ✓ |
+| elev2D.th.nc | ✓ | ✓ | ✓ |
+| wwminput.nml | | ✓ | ✓ |
+| wwmbnd.gr3 | | ✓ | ✓ |
+| wwmbnd.XY | | ✓ | ✓ |
+| windrot_geo2proj.gr3 | | ✓ | ✓ |
+| sflux_air_1.0001.nc | | | ✓ |
+| sflux_prc_1.0001.nc | | | ✓ |
+| sflux_inputs.txt | | | ✓ |
+
+Note: This table includes the core files typically required for each configuration. Additional files might be necessary depending on specific model setups and options chosen in the parameter files.
+
