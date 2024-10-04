@@ -33,6 +33,55 @@ Temporal Resolution: Usually hourly or sub-hourly time steps
 Spatial Coverage: Values provided for each open boundary node
 Format: NetCDF (Network Common Data Form)
 
+# elev.th to elev2D.th.nc Converter (write_elev2dnc.py)
+
+This write_elev2dnc.py Python script converts `elev.th` files to `elev2D.th.nc` files for use with the SCHISM model.
+
+## Overview
+
+The script generates an `elev2D.th.nc` (type 4 Boundary Condition) file for the SCHISM model from grid files and timeseries data. It processes the following inputs:
+
+- `hgrid.gr3`
+- `vgrid.in`
+- `elev.th` (timeseries data)
+
+## Requirements
+
+- Python 3.x
+- NumPy
+- netCDF4
+- pyschism
+
+## Usage
+
+1. Ensure grid files (`hgrid.gr3`, `vgrid.in`) are in the `fixed_files` directory.
+2. Place `elev.th` file in the same directory as the script.
+3. Run the script:
+
+   ```
+   python write_elev2dnc.py
+   ```
+
+4. The script will generate `elev2D.th.nc` in the current directory.
+
+## Process
+
+1. Load grid files using pyschism.
+2. Read timeseries data from `elev.th`.
+3. Create a NetCDF file with appropriate dimensions and variables.
+4. Populate the NetCDF file with data from `elev.th` and grid information.
+5. Add necessary metadata and attributes.
+
+## Output
+
+The resulting `elev2D.th.nc` file includes:
+
+- Dimensions: nComponents, nLevels, time, nOpenBndNodes
+- Variables: nComponents, nLevels, time, time_series, time_step
+- Global attributes: Conventions, history
+
+This file is structured for direct use with the SCHISM model.
+
 SCHISM Required Files Table (Duck, NC RT 1994 Case)
 
 
